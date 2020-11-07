@@ -1,0 +1,6 @@
+##grflangid 0x1F
+# This is the Dutch language file
+
+# GRF name and description definitions
+STR_GRF_NAME        :{TITLE}
+STR_GRF_DESCRIPTION :{BLUE}{TITLE}{BLACK} vervangt de standaard uitzendmast met een uitkijktoren. {}{}{BROWN}Door Javelin{ORANGE}NL
