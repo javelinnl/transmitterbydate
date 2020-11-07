@@ -1,0 +1,6 @@
+##grflangid 0x01
+# This is the English language file
+
+# GRF name and description definitions
+STR_GRF_NAME        :{TITLE}
+STR_GRF_DESCRIPTION :{BLUE}{TITLE}{BLACK} replaces the default transmitter antenna with a lookout tower. {}{}{BROWN}By Javelin{ORANGE}NL

@@ -1,0 +1,11 @@
+grf {
+	grfid: "JV\01\01";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
+	version: 0;
+	min_compatible_version: 0;
+}
+
+replace (2601, "gfx/tower.png") {
+ 		[ 0, 0, 64,96, -31,  -78]
+ }
