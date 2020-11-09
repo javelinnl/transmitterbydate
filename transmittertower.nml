@@ -14,7 +14,7 @@ replace (2601, "gfx/tower1.png") {
 else
 if (year_loaded >= 1700 && year_loaded < 1800) 
 { //Stone Tower
-replace (2601, "gfx/tower2.png") {
+replace (2601, "gfx/tower2.png") {19
  		[ 0, 0, 64,96, -31,  -78]
         }}
 else
@@ -25,7 +25,7 @@ replace (2601, "gfx/tower3.png") {
         }}
 else
 if (year_loaded >= 1900 && year_loaded < 1950) 
-{ //Lookout Tower
+{ //Fire Lookout Tower
 replace (2601, "gfx/tower4.png") {
  		[ 0, 0, 64,96, -31,  -78]
         }}

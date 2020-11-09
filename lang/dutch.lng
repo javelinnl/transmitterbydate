@@ -3,4 +3,4 @@
 
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE}
-STR_GRF_DESCRIPTION :{BLUE}{TITLE}{BLACK} vervangt de standaard uitzendmast met een toren die naar datum veranderd.{}Komt in een steen/semafoor/uitkijk/radio/raketlanceer variant verspreid van 1700 tot 2025{}(op het moment zijn alleen de semafoor en uitkijktoren beschikbaar){}{}{BROWN}Door Javelin{ORANGE}NL
+STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{WHITE} vervangt de standaard uitzendmast met een toren die naar datum verandert.{}{BLACK}Semafoor toren voor 1900, uitkijktoren erna.{}{}{BROWN}Door Javelin{ORANGE}NL
