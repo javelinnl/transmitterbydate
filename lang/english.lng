@@ -3,4 +3,4 @@
 
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE}
-STR_GRF_DESCRIPTION :{BLUE}{TITLE}{BLACK} replaces the default transmitter antenna with a lookout tower. {}{}{BROWN}By Javelin{ORANGE}NL
+STR_GRF_DESCRIPTION :{BLUE}{TITLE}{BLACK} replaces the default transmitter antenna with a tower that changes by date.{}Comes in a stone/semaphore/lookout/radio/rocket launch variety, ranging from 1700 to 2025{}{}(currently only the semaphore tower and lookout tower are available){}{BROWN}By Javelin{ORANGE}NL
