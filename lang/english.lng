@@ -3,7 +3,7 @@
 
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE}
-STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{}{WHITE}Replace the default transmitter antenna by date and/or build the new objects manually.{}{}{BLACK}Before  1700: Megalithic Dolmen{}1700 - 1800: Stone Tower{}1800 - 1900: Semaphore Tower{}1900 - 1950: Fire Lookout Tower{}1950 - 2050: Original Transmitter{}2050 and after: Launch Tower{}{}{BROWN}By Javelin{ORANGE}NL
+STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{}{WHITE}Replace the default transmitter antenna by date and/or build the new objects manually.{}{}{SILVER}Before  1700: Megalithic Dolmen{}1700 - 1800: Stone Tower{}1800 - 1900: Semaphore Tower{}1900 - 1950: Fire Lookout Tower{}1950 - 2050: Original Transmitter{}2050 and after: Launch Tower{}{}{BROWN}By Javelin{ORANGE}NL{}{BLACK}Inspired by Rock Replacement for Transmitter{}Uses graphics from the OpenGFX set{}Thank you Reddit user sittinbythefire for coding advice
 
 # Parameters
 STR_PARAMETER_NAME	:Tower selection

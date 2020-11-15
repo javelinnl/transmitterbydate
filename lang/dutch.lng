@@ -3,7 +3,7 @@
 
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE}
-STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{WHITE}{}Vervangt de standaard uitzendmast naar datum en/of bouw de nieuwe voorwerpen handmatig.{}{}{BLACK}Voor 1800: Hunnebed{}1700 - 1800: Stenen Toren{}1800 - 1900: Semafoor Toren{}1900 - 1950: Uitkijktoren{}1950 - 2050: Orginele Uitzendmast{}Vanaf 2050: Lanceerplatform{}{}{BROWN}Door Javelin{ORANGE}NL
+STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{WHITE}{}Vervangt de standaard uitzendmast naar datum en/of bouw de nieuwe voorwerpen handmatig.{}{}{SILVER}Voor 1800: Hunnebed{}1700 - 1800: Stenen Toren{}1800 - 1900: Semafoor Toren{}1900 - 1950: Uitkijktoren{}1950 - 2050: Orginele Uitzendmast{}Vanaf 2050: Lanceerplatform{}{}{BROWN}Door Javelin{ORANGE}NL{}{BLACK}Geinspireerd door Rock Replacement for Transmitter{}Gebruikt graphics uit de OpenGFX set{}Bedankt, Reddit gebruiker sittinbyfire voor programmeeradvies
 
 # Parameters
 STR_PARAMETER_NAME	:Toren selectie
