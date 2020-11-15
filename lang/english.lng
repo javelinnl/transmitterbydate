@@ -3,4 +3,33 @@
 
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE}
-STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{WHITE} replaces the default transmitter antenna with a tower that changes by date.{}{BLACK}Semaphore tower before 1900, fire lookout tower after.{}{}{BROWN}By Javelin{ORANGE}NL
+STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{}{WHITE}Replace the default transmitter antenna by date and/or build the new objects manually.{}{}{BLACK}Before  1700: Megalithic Dolmen{}1700 - 1800: Stone Tower{}1800 - 1900: Semaphore Tower{}1900 - 1950: Fire Lookout Tower{}1950 - 2050: Original Transmitter{}2050 and after: Launch Tower{}{}{BROWN}By Javelin{ORANGE}NL
+
+# Parameters
+STR_PARAMETER_NAME	:Tower selection
+STR_PARAMETER_DESC	:Choose which tower to use to replace the transmitter or set to automatic by year
+STR_PARAMETER_OPT0	:Automatic
+STR_PARAMETER_OPT1	:Megalithic Dolmen
+STR_PARAMETER_OPT2	:Stone Tower
+STR_PARAMETER_OPT3	:Semaphore Tower
+STR_PARAMETER_OPT4	:Fire Lookout Tower
+STR_PARAMETER_OPT5	:Original Transmitter
+STR_PARAMETER_OPT6	:Launch Tower
+
+# Object classes
+STR_JVNL            :Towers
+
+# Object name and description
+STR_TOWER1          :Megalithic Dolmen
+STR_TOWER1_PURCHASE :I rock. And roll. All day long. Sweet Suzy
+STR_TOWER2          :Stone Tower
+STR_TOWER2_PURCHASE :All -knight- long. Get it? Get it?
+STR_TOWER3          :Semaphore Tower
+STR_TOWER3_PURCHASE :If only I could read what they say...
+STR_TOWER4          :Fire Lookout Tower
+STR_TOWER4_PURCHASE :You'd better watch those fires!
+STR_TOWER5          :Original Transmitter
+STR_TOWER5_PURCHASE :KOTTD FM, playing your favourite MIDI tracks
+STR_TOWER6          :Launch Tower
+STR_TOWER6_PURCHASE :Get your rear end to Mars!
+

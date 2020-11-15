@@ -3,4 +3,32 @@
 
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE}
-STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{WHITE} vervangt de standaard uitzendmast met een toren die naar datum verandert.{}{BLACK}Semafoor toren voor 1900, uitkijktoren erna.{}{}{BROWN}Door Javelin{ORANGE}NL
+STR_GRF_DESCRIPTION :{BLUE}{TITLE} {VERSION}{WHITE}{}Vervangt de standaard uitzendmast naar datum en/of bouw de nieuwe voorwerpen handmatig.{}{}{BLACK}Voor 1800: Hunnebed{}1700 - 1800: Stenen Toren{}1800 - 1900: Semafoor Toren{}1900 - 1950: Uitkijktoren{}1950 - 2050: Orginele Uitzendmast{}Vanaf 2050: Lanceerplatform{}{}{BROWN}Door Javelin{ORANGE}NL
+
+# Parameters
+STR_PARAMETER_NAME	:Toren selectie
+STR_PARAMETER_DESC	:Kies welke toren de uitzendmast vervangt of doe dit automatisch op jaartal
+STR_PARAMETER_OPT0	:Automatisch
+STR_PARAMETER_OPT1	:Hunnebed
+STR_PARAMETER_OPT2	:Stenen Toren
+STR_PARAMETER_OPT3	:Semafoortoren
+STR_PARAMETER_OPT4	:Houten Uitkijktoren
+STR_PARAMETER_OPT5	:Orginele Uitzendmast
+STR_PARAMETER_OPT6	:Lanceerplatform
+
+# Object classes
+STR_JVNL            :Toren
+
+# Object name and description
+STR_TOWER1          :Hunnebed
+STR_TOWER1_PURCHASE :Hunnebed. Keigaaf man.
+STR_TOWER2          :Stenen Toren
+STR_TOWER2_PURCHASE :Toren. Van steen.
+STR_TOWER3          :Semafoor Toren
+STR_TOWER3_PURCHASE :Ik wou dat ik begreep wat ze zeggen...
+STR_TOWER4          :Houten Uitkijktoren
+STR_TOWER4_PURCHASE :Kijk uit, toren!
+STR_TOWER5          :Orginele Uitzendmast
+STR_TOWER5_PURCHASE :TransportFM, voor je favoriete MIDI tracks
+STR_TOWER6          :Lanceerplatform
+STR_TOWER6_PURCHASE :Raket naar de maan, Kuifje niet meegeleverd.

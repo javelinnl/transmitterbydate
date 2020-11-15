@@ -1,0 +1,293 @@
+grf {
+	grfid: "JV\50\01";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
+	version: 0;
+	min_compatible_version: 0;
+	param 1 {
+	tower_select {
+		type:    int;
+		name:    string(STR_PARAMETER_NAME);
+		desc:    string(STR_PARAMETER_DESC);
+		min_value: 0;
+		max_value: 6;
+		def_value: 0;
+		names: {
+			0: string(STR_PARAMETER_OPT0);
+			1: string(STR_PARAMETER_OPT1);
+			2: string(STR_PARAMETER_OPT2);
+			3: string(STR_PARAMETER_OPT3);
+			4: string(STR_PARAMETER_OPT4);
+			5: string(STR_PARAMETER_OPT5);
+			6: string(STR_PARAMETER_OPT6);
+		};
+	}}}
+	
+/////////////////////////////////
+
+if (year_loaded < 1700 && param[1] == 0 || param[1] == 1) 
+{ //Megalithic Dolmen
+replace (2601, "gfx/tower1.png") {
+ 		[ 0, 0, 64,96, -31,  -78]
+        }}
+else
+if (year_loaded >= 1700 && year_loaded < 1800 && param[1] == 0 || param[1] == 2) 
+{ //Stone Tower
+replace (2601, "gfx/tower2.png") {
+ 		[ 0, 0, 64,96, -31,  -78]
+        }}
+else
+if (year_loaded >= 1800 && year_loaded < 1900 && param[1] == 0 || param[1] == 3) 
+{ //Semaphore Tower
+replace (2601, "gfx/tower3.png") {
+ 		[ 0, 0, 64,96, -31,  -78]
+        }}
+else
+if (year_loaded >= 1900 && year_loaded < 1950 && param[1] == 0 || param[1] == 4) 
+{ //Fire Lookout Tower
+replace (2601, "gfx/tower4.png") {
+ 		[ 0, 0, 64,96, -31,  -78]
+        }}
+else
+if (year_loaded >= 1950 && year_loaded < 2050 && param[1] == 0 || param[1] == 5) 
+{ //Original Transmitter
+replace (2601, "gfx/tower5.png") {
+ 		[ 0, 0, 64,96, -31,  -78]
+        }}
+else
+if (year_loaded >= 2050 && param[1] == 0 || param[1] == 6)
+{ //Launch Tower
+replace (2601, "gfx/tower6.png") {
+ 		[ 0, 0, 64,96, -31,  -78]
+        }}
+
+/////////////////////////////////
+		
+spriteset (spriteset_tower1, "gfx/tower1.png") {
+    [ 0, 0, 64,96, -31,  -78]
+}
+spriteset (spriteset_tower2, "gfx/tower2.png") {
+    [ 0, 0, 64,96, -31,  -78]
+}
+spriteset (spriteset_tower3, "gfx/tower3.png") {
+    [ 0, 0, 64,96, -31,  -78]
+}
+spriteset (spriteset_tower4, "gfx/tower4.png") {
+    [ 0, 0, 64,96, -31,  -78]
+}
+spriteset (spriteset_tower5, "gfx/tower5.png") {
+    [ 0, 0, 64,96, -31,  -78]
+}
+spriteset (spriteset_tower6, "gfx/tower6.png") {
+    [ 0, 0, 64,96, -31,  -78]
+}
+
+/////////////////////////////////
+
+spritelayout spritelayout_tower1 {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_tower1(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout spritelayout_tower2 {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_tower2(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout spritelayout_tower3 {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_tower3(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout spritelayout_tower4 {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_tower4(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout spritelayout_tower5 {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_tower5(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout spritelayout_tower6 {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: spriteset_tower6(0);
+        xextent: 0;
+        yextent: 0;
+        zextent: 0;
+        xoffset: 7; //from NE edge
+        yoffset: 7; //from NW edge
+        zoffset: 0;
+    }
+}
+
+/////////////////////////////////
+
+item (FEAT_OBJECTS, item_tower1) {
+    property {
+        class:                  "JVNL";
+        classname:              string(STR_JVNL);
+        name:                   string(STR_TOWER1);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 2;
+        num_views:              1;
+    }
+    graphics {
+		default: 			spritelayout_tower1;
+        additional_text:    string(STR_TOWER1_PURCHASE);
+    }
+}
+item (FEAT_OBJECTS, item_tower2) {
+    property {
+        class:                  "JVNL";
+        classname:              string(STR_JVNL);
+        name:                   string(STR_TOWER2);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 7;
+        num_views:              1;
+    }
+    graphics {
+		default: 			spritelayout_tower2;
+        additional_text:    string(STR_TOWER2_PURCHASE);
+    }
+}
+item (FEAT_OBJECTS, item_tower3) {
+    property {
+        class:                  "JVNL";
+        classname:              string(STR_JVNL);
+        name:                   string(STR_TOWER3);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 10;
+        num_views:              1;
+    }
+    graphics {
+		default: 			spritelayout_tower3;
+        additional_text:    string(STR_TOWER3_PURCHASE);
+    }
+}
+item (FEAT_OBJECTS, item_tower4) {
+    property {
+        class:                  "JVNL";
+        classname:              string(STR_JVNL);
+        name:                   string(STR_TOWER4);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 9;
+        num_views:              1;
+    }
+    graphics {
+		default: 			spritelayout_tower4;
+        additional_text:    string(STR_TOWER4_PURCHASE);
+    }
+}
+item (FEAT_OBJECTS, item_tower5) {
+    property {
+        class:                  "JVNL";
+        classname:              string(STR_JVNL);
+        name:                   string(STR_TOWER5);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 6;
+        num_views:              1;
+    }
+    graphics {
+		default: 			spritelayout_tower5;
+        additional_text:    string(STR_TOWER5_PURCHASE);
+    }
+}
+item (FEAT_OBJECTS, item_tower6) {
+    property {
+        class:                  "JVNL";
+        classname:              string(STR_JVNL);
+        name:                   string(STR_TOWER6);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  2;
+        remove_cost_multiplier: 8;
+        introduction_date:      date(0,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask();
+        height:                 11;
+        num_views:              1;
+    }
+    graphics {
+		default: 			spritelayout_tower6;
+        additional_text:    string(STR_TOWER6_PURCHASE);
+    }
+}
